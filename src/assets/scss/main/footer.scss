@@ -1,0 +1,124 @@
+.btnTop{
+  float:right;
+  margin-right: 80px;
+  margin-top: -10px;
+  font-size: small;
+  background: $yellow;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#footer{
+    border-top: 12px solid $yellow;
+    padding: 40px 0px;
+    background: $purple;
+    margin-top: 18px;
+
+    .s-footer__blockLogo{
+        text-align: right;
+    }
+
+    .s-footer--socialBlock{
+            a{
+                margin-right: 10px;
+                &:last-child{
+                    margin-right: 0px;
+                }
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+
+            i{
+                @include border-radius(50%);
+                background: $white;
+                padding: 10px;
+                font-size: large;
+            }
+            i.icon-social-twitter{
+                background: $blue-light;
+                color:$white;
+                &:hover{
+                    @include transition(background-color .4s, color .4s);
+                    background: $white;
+                    color: $blue-light;
+                    @include box-shadow(1px, 1px, 10px, $gray-light, false );
+                    text-decoration: none;
+                }
+            }
+            i.icon-social-facebook {
+                background: $blue;
+                color:$white;
+                &:hover{
+                    @include transition(background-color .4s, color .4s);
+                    background: $white;
+                    color: $blue;
+                    @include box-shadow(1px, 1px, 10px, $gray-light, false );
+                    text-decoration: none;
+                }
+            }
+            i.fa-instagram{
+                background: $black;
+                color: $white;
+                &:hover{
+                    @include transition(background-color .4s, color .4s);
+                    background: $white;
+                    color: $black;
+                    @include box-shadow(1px, 1px, 10px, $gray-light, false );
+                }
+            }
+            margin-top: 25px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+    }
+
+  .btn156{
+      color: $white;
+  }
+
+  .blockAdress{
+    display: flex;
+    align-items: start;
+  }
+
+  .blockAdress address{
+    margin-left: 15px;
+  }
+
+  .linkPortal{
+    color:$yellow;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .linkPortal:hover{
+    color: $white;
+  }
+
+  .logoBranca{
+    width: 300px;
+  }
+
+}
+
+.s-cookie{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    font-size: .85rem;
+    padding: 10px;
+    border-top: 1px solid $gray-light;
+    p{
+        margin-bottom: 0px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+
+
+}

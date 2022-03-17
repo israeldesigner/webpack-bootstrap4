@@ -1,0 +1,206 @@
+@media (max-width: 1365px) {
+
+
+}
+
+@media (min-width: 991px ) and ( max-width:1200px ) {
+
+    .h-nav__brand--image{
+        display: none;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .s-content{
+        padding: 100px 0px;
+    }
+
+    .s-page{
+        padding: 50px 0px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .s-content{
+        padding: 70px 0px;
+    }
+    .s-page{
+        padding: 15px 0px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    .s-content{
+        padding: 70px 0px;
+    }
+    .lib-panel img {
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+      }
+
+      .bgCitinova{
+        background: $purple !important;
+    }
+
+    .lib-panel .icon-round{
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 769px) {
+    .s-content{
+        padding: 50px 0px;
+    }
+
+    .lib-panel img {
+        height: 125px;
+        overflow: hidden;
+    }
+
+    .lead{
+        font-size: 1.0rem;
+    }
+
+    .card-form{
+        h2{
+            font-size: 1.40rem;
+        }
+    }
+
+    #footer{
+        .s-footer__blockLogo{
+            text-align: center;
+        }
+        .s-footer--socialBlock{
+            justify-content:center;
+            margin-bottom: 25px;
+        }
+        .logoBranca{
+            width: 200px;
+        }
+        .linkPortal{
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+
+    .s-about{
+        .s-about__blockImg{
+            figure{
+                img{
+                    width: 285px;
+                }
+            }
+        }
+    }
+
+    .card-curso{
+        margin-bottom: 20px !important;
+        .card-img-top{
+            height: 125px !important;
+        }
+
+        .card-cursoImg--badge{
+            top: 85px;
+        }
+
+        .card-text{
+            font-size: .90rem;
+        }
+
+        button{
+            font-size: .85rem;
+        }
+
+    }
+
+    .termosUso{
+        height: 240px;
+    }
+
+}
+
+@media (max-width: 440px) {
+
+    .card-curso{
+        margin-bottom: 20px !important;
+        .card-img-top{
+            height: 100px !important;
+        }
+        .card-body{
+            padding: 0.85rem;
+            margin-top: 10px;
+            .card-title {
+                height: 60px !important;
+                font-size: 0.7rem !important;
+            }
+            .card-bodyImg{
+                height: auto;
+                margin-top: 0px;
+                margin-bottom: 7px;
+                img{
+                    width: 95px;
+                    height: auto;
+                }
+            }
+        }
+
+        .card-cursoImg--modalidade{
+            left: -10px;
+            width: 75px !important;
+        }
+
+        .card-cursoImg--badge{
+            right: 5px;
+            top: 65px;
+            .badge{
+                font-size: 0.50rem;
+            }
+        }
+        .card-cursoImg--badge{
+            top: 85px;
+        }
+
+        .card-text{
+            font-size: .60rem;
+        }
+
+        button{
+            font-size: .55rem;
+        }
+
+    }
+
+    .s-banner{
+        .carousel-item {
+            .s-banner__block{
+                button{
+                    opacity: 0.0;
+                    margin-top: 60px;
+                }
+            }
+        }
+        .carousel-indicators{
+            display: none;
+        }
+    }
+
+
+}
+@media (max-width: 380px) {
+
+    .card-curso{
+        margin-bottom: 20px !important;
+
+    }
+
+}
+

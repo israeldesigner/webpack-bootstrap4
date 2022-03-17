@@ -1,0 +1,325 @@
+#msform {
+    text-align: center;
+    position: relative;
+}
+#msform fieldset,
+#msform fieldset .form-card {
+    border: 0 none;
+    border-radius: 0;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+}
+#msform fieldset {
+    background: #fff;
+    padding: 15px;
+    margin: 0;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+#msform fieldset .form-card {
+    text-align: left;
+    color: #494949;
+}
+#msform .action-button {
+    width: 100px;
+    background: skyblue;
+    font-weight: 700;
+    color: #fff;
+    border: 0 none;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+#msform .action-button:focus,
+#msform .action-button:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #77b1c6;
+}
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: 700;
+    color: #fff;
+    border: 0 none;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+#msform .action-button-previous:focus,
+#msform .action-button-previous:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #616161;
+}
+.card {
+    z-index: 0;
+    border: none;
+    border-radius: 0.5rem;
+    position: relative;
+}
+.fs-title {
+    font-size: 25px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-align: left;
+}
+#progressbar, #progressbar-logged {
+    padding-left: 0;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    overflow: hidden;
+    color: $gray-light;
+    text-align: center;
+}
+#progressbar .active, #progressbar-logged .active {
+    color: #000;
+}
+#progressbar li {
+    list-style-type: none;
+    font-size: 12px;
+    width: 20%;
+    float: left;
+    position: relative;
+}
+#progressbar-logged li  {
+    list-style-type: none;
+    font-size: 12px;
+    width: 25%;
+    float: left;
+    position: relative;
+}
+#progressbar #password:before {
+    font-family: simple-line-icons;
+    content: "\E08c";
+}
+#progressbar #account:before, #progressbar-logged  #account:before{
+    font-family: simple-line-icons;
+    content: "\E005";
+}
+#progressbar #residenciais:before, #progressbar-logged #residenciais:before {
+    font-family: simple-line-icons;
+    content: "\E019";
+}
+#progressbar #financeiros:before, #progressbar-logged #financeiros:before{
+    font-family: simple-line-icons;
+    content: "\E04c";
+}
+#progressbar #upload:before, #progressbar-logged #upload:before {
+    font-family: simple-line-icons;
+    content: "\E084";
+}
+#progressbar #confirm:before,  #progressbar-logged #confirm:before{
+    font-family: simple-line-icons;
+    content: "\E080";
+}
+#progressbar li:before, #progressbar-logged li:before  {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 22px;
+    color: #fff;
+    background: $gray-light;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    padding: 2px;
+}
+#progressbar li:after, #progressbar-logged li:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #ced4da;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1;
+}
+#progressbar li.active:after,
+#progressbar li.active:before,
+#progressbar-logged li.active:after,
+#progressbar-logged li.active:before{
+    background: $purple;
+}
+
+.asteriskField{
+    color: $red;
+}
+
+.div_id_cpf{
+    margin-bottom: 0px;
+}
+
+.msgCpf{
+    display: none;
+    font-size: small;
+}
+.msgError{
+    display: none;
+}
+
+.card-form{
+    padding:50px 0px;
+}
+
+.divHidenBlock{
+    display: none;
+}
+
+.card-form{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    .card-form__lista{
+        font-size: .95rem;
+        list-style: none;
+        border-left: 5px solid $purple;
+        padding-left: 10px;
+        li{
+            color: $gray;
+            margin-bottom: 8px;
+        }
+    }
+}
+
+
+.card-formCpf{
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 25px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    .btnEnviarCpf{
+        @include border-radius(4px);
+    }
+}
+@media (max-width: 768px) {
+    .card-formCpf{
+        max-width: 100%;
+    }
+}
+
+///reset select 2 form
+
+.select2-container{
+    width: 100% !important;
+}
+.select2-container--default .select2-selection--single,
+.select2-container--default.select2-container--focus .select2-selection--multiple{
+    height: 36px !important;
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+    border-radius: .25rem !important;
+}
+.select2-container--default .select2-selection--single
+
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 45px !important;
+}
+
+.divSenhaVerify{
+    position: relative;
+    i{
+        position: absolute;
+        right: 35px;
+        bottom: 25px;
+        cursor: pointer;
+        &:hover{
+            color: purple;
+        }
+    }
+}
+
+
+.form-control.is-valid, .was-validated .form-control:valid{
+    border-color: #28a745 !important;
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid{
+    border-color: #dc3545 !important;
+}
+
+//termos de uso
+.termosUso{
+    height: 350px;
+    overflow-y: scroll;
+}
+
+/*custom checkboxes*/
+.span_pseudo, .chiller_cb span:before, .chiller_cb span:after {
+    content: "";
+    display: inline-block;
+    background: $white;
+    width: 0;
+    height: 0.2rem;
+    position: absolute;
+    transform-origin: 0% 0%;
+  }
+
+  .chiller_cb {
+    position: relative;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  .chiller_cb input {
+    display: none;
+  }
+  .chiller_cb input:checked ~ span {
+    background: $purple;
+    border-color: $purple;
+  }
+  .chiller_cb input:checked ~ span:before {
+    width: 1rem;
+    height: 0.15rem;
+    transition: width 0.1s;
+    transition-delay: 0.3s;
+  }
+  .chiller_cb input:checked ~ span:after {
+    width: 0.4rem;
+    height: 0.15rem;
+    transition: width 0.1s;
+    transition-delay: 0.2s;
+  }
+  .chiller_cb input:disabled ~ span {
+    background: $gray-light;
+    border-color: $gray-light;
+  }
+  .chiller_cb input:disabled ~ label {
+    color: $purple;
+    opacity: .7;
+  }
+  .chiller_cb input:disabled ~ label:hover {
+    cursor: default;
+  }
+  .chiller_cb label {
+    padding-left: 2rem;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    margin-bottom:0;
+  }
+  .chiller_cb span {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 2px solid $gray;
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+    z-index: 1;
+    box-sizing: content-box;
+  }
+  .chiller_cb span:before {
+    transform: rotate(-55deg);
+    top: 1rem;
+    left: 0.37rem;
+  }
+  .chiller_cb span:after {
+    transform: rotate(35deg);
+    bottom: 0.35rem;
+    left: 0.2rem;
+	}
