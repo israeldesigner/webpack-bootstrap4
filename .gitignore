@@ -10,3 +10,5 @@ node_modules/
 _db_.sqlite3_
 node_modules/
 app/
+
+package-lock.json
